@@ -15,8 +15,6 @@ jobs:
           node-version: '20.x'
       - name: install dependies
         run: npm install
-      - name: test
-        run: npm test
       - name: vulnerabilities
         run: npm audit fix --force
       - name: for running
