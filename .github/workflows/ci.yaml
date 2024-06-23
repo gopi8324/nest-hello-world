@@ -16,4 +16,10 @@ jobs:
       - name: install dependies
         run: npm install
       - run: npm run build --if-present
-      - run: npm test
+      - name: vulnerabilities
+        run: npm audit fix --force
+      - name: test
+        run: npm test
+      - name: for running
+        run: npm run 
+      
