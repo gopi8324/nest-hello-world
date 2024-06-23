@@ -1,5 +1,7 @@
-name: Node.js CI
-on: [push]
+name: Node.js CI/CD
+on:
+  push:
+    branches: [master]
 jobs: 
   build:
 
